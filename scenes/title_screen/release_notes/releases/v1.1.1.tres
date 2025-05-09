@@ -74,4 +74,7 @@ Fixed a typo in the v1.1.0 release notes
 Minor text fixes
 [TITLE]Hotfix #1
 Fixed Cowboy Hat's Description
-Fixed an issue where White-Out wouldn't duplicate the floor variant properly"
+Fixed an issue where White-Out wouldn't duplicate the floor variant properly
+White-Out will no longer save your current game file on use
+Fixed the level range for the Executive Office not displaying properly
+Floor Clear rewards should be a bit nicer now"
