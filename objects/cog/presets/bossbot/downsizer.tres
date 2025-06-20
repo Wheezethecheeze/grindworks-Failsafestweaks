@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://berwbvcnp521g" path="res://objects/battle/battle_resources/cog_attacks/resources/pink_slip.tres" id="2_0syw0"]
 [ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_qtcfj"]
 [ext_resource type="Resource" uid="uid://by0leo7nlf311" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="3_0pwxw"]
-[ext_resource type="PackedScene" uid="uid://ctp4dbflsbvp6" path="res://models/cogs/heads/beancounter.glb" id="4_ivhrc"]
+[ext_resource type="PackedScene" uid="uid://bb7tvo5f7dkoq" path="res://models/cogs/heads/downsizer.glb" id="4_vm4qy"]
 [ext_resource type="Texture2D" uid="uid://bpbvadoromjvp" path="res://models/cogs/heads/theface.png" id="5_vm4qy"]
 [ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_bbtcm"]
 
@@ -16,7 +16,7 @@ cog_name = "Downsizer"
 name_plural = ""
 name_prefix = "Down"
 name_suffix = "Sizer"
-head = ExtResource("4_ivhrc")
+head = ExtResource("4_vm4qy")
 head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 4.5
@@ -25,6 +25,7 @@ hand_color = Color(0.568627, 0.505882, 0.462745, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
 custom_nametag_suffix = ""
+can_speak = true
 attacks = Array[ExtResource("1_ks5c0")]([ExtResource("2_0syw0"), ExtResource("3_0pwxw")])
 level_low = 5
 level_high = 12

@@ -35,7 +35,7 @@
 resource_local_to_scene = true
 font = ExtResource("9_ikkwa")
 font_size = 36
-font_color = Color(0.999911, 0.640551, 0.225015, 1)
+font_color = Color(0.620333, 0.33, 1, 1)
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(2, 2)
 
@@ -51,6 +51,7 @@ shader_parameter/alpha = 1.0
 [sub_resource type="LabelSettings" id="LabelSettings_5vlir"]
 font = ExtResource("14_ndcfx")
 font_size = 24
+outline_size = 1
 
 [sub_resource type="LabelSettings" id="LabelSettings_fdkeb"]
 font = ExtResource("14_ndcfx")
@@ -527,7 +528,9 @@ environment = SubResource("Environment_77gfr")
 [node name="CogBuilding" parent="World3D" instance=ExtResource("15_7ysqf")]
 unique_name_in_owner = true
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, -0.005, 0)
-building_name = "An Ordinary Cog Building"
+
+[node name="SignText" parent="World3D/CogBuilding/suit_landmark_new_corp/locators/sign_origin/Sign" index="0"]
+text = ""
 
 [node name="SpringArm" type="SpringArm3D" parent="World3D"]
 transform = Transform3D(1, 0, 0, 0, 0.927184, 0.374607, 0, -0.374607, 0.927184, 0, 5, 8.025)
