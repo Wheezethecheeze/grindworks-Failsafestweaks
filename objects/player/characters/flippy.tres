@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=17 format=3 uid="uid://cbumr2pvgy1io"]
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=18 format=3 uid="uid://cbumr2pvgy1io"]
 
 [ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="1_4idkh"]
 [ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_ivgnp"]
@@ -12,14 +12,15 @@
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="9_t8yrd"]
 [ext_resource type="Resource" uid="uid://cyiwxplege133" path="res://objects/items/resources/passive/emergency_unite.tres" id="10_81tpj"]
 [ext_resource type="Resource" uid="uid://ci7shc77lxvwr" path="res://objects/items/resources/passive/flippy_setup.tres" id="12_e8jb6"]
+[ext_resource type="Resource" uid="uid://ca25oh0addxd4" path="res://objects/items/resources/passive/failsafe-eye.tres" id="13_4xrsp"]
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("1_vg416")
 damage = 1.0
-defense = 1.0
-evasiveness = 1.0
-accuracy = 1.0
-speed = 1.0
+defense = 4.0
+evasiveness = 4.0
+accuracy = 2.0
+speed = 2.0
 max_turns = 3
 max_hp = 25
 hp = 25
@@ -42,26 +43,26 @@ color_type = 0
 [sub_resource type="Resource" id="Resource_ax4gq"]
 script = ExtResource("1_4idkh")
 body_type = 1
-species = 2
+species = 1
 head_index = 2
 eyelashes = false
 skirt = false
-head_color = Color(0.345098, 0.819608, 0.952941, 1)
-torso_color = Color(0.345098, 0.819608, 0.952941, 1)
-leg_color = Color(0.345098, 0.819608, 0.952941, 1)
+head_color = Color(0.463, 0.38, 0.49, 1)
+torso_color = Color(0.462745, 0.380392, 0.490196, 1)
+leg_color = Color(0.462745, 0.380392, 0.490196, 1)
 shirt = SubResource("Resource_2lryd")
 bottoms = SubResource("Resource_ugrs1")
 
 [resource]
 script = ExtResource("1_joak5")
-character_name = "Flippy"
-character_summary = "- Can revive once before going sad
+character_name = "Weasel"
+character_summary = "- Can revive 4 times before going sad
 - 5% base Throw boost
 - Starts with Throw and Squirt"
 dna = SubResource("Resource_ax4gq")
 gag_loadout = ExtResource("2_pvta8")
 starting_laff = 30
-starting_items = Array[ExtResource("9_t8yrd")]([ExtResource("10_81tpj"), ExtResource("12_e8jb6")])
+starting_items = Array[ExtResource("9_t8yrd")]([ExtResource("10_81tpj"), ExtResource("10_81tpj"), ExtResource("10_81tpj"), ExtResource("10_81tpj"), ExtResource("12_e8jb6"), ExtResource("13_4xrsp")])
 base_stats = SubResource("Resource_jj61k")
 override_index = -1
 achievement_qualities = Dictionary[int, String]({
