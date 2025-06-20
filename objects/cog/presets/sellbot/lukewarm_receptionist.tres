@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_prigs"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_c64v8"]
 [ext_resource type="PackedScene" uid="uid://2ewnjjvwgpwy" path="res://models/cogs/heads/coldcaller.glb" id="7_7xbt4"]
-[ext_resource type="Texture2D" uid="uid://bq8afiw8fq5r4" path="res://models/cogs/heads/coldcaller_desat.png" id="8_vcsnp"]
+[ext_resource type="Texture2D" uid="uid://cjyv6tyq3bqf0" path="res://models/cogs/heads/lukewarmrecept.png" id="8_781v7"]
 [ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="9_iwy0p"]
 [ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="10_6deip"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11_8tmfi"]
@@ -21,15 +21,18 @@ custom_arm_tex = ExtResource("4_syaha")
 custom_leg_tex = ExtResource("6_c64v8")
 cog_name = "Lukewarm Receptionist"
 name_plural = ""
+name_prefix = ""
+name_suffix = ""
 head = ExtResource("7_7xbt4")
 head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 3.5
-head_textures = Array[Texture2D]([ExtResource("8_vcsnp")])
-hand_color = Color(0.286007, 0.65016, 0.435072, 1)
-head_color = Color(0.381103, 0.815084, 0.555777, 1)
+head_textures = Array[Texture2D]([ExtResource("8_781v7")])
+hand_color = Color(0.423529, 0.333333, 0.721569, 1)
+head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
 custom_nametag_suffix = ""
+can_speak = true
 attacks = Array[ExtResource("1_v721g")]([ExtResource("2_6enlv"), ExtResource("3_4sy8p")])
 level_low = 1
 level_high = 20

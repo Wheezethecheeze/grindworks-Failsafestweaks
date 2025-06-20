@@ -48,8 +48,8 @@ func get_true_summary() -> String:
 	return desc
 
 
-## CINDY SPRINKLES: DELAYED TO 1.1.3
+## CINDY SPRINKLES: DELAYED TO 1.W.2
 ## REVISION BASED ON FEEDBACK:
-## Starts with Dragon Wings
-## Starts with 200000 Jellybeans
-## Starts with 8 Turns
+## Starts with throw and 1 random gag
+## Starts with 1 turn
+## similar to clara, throw gives a stat boost.
