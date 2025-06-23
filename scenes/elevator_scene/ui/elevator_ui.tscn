@@ -136,8 +136,6 @@ texture_normal = ExtResource("8_waig3")
 texture_pressed = ExtResource("9_3jat1")
 texture_hover = ExtResource("10_a4f0k")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Save & Quit"
 
 [node name="Label" parent="ContinueButton" index="0"]

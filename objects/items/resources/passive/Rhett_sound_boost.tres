@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://2beslhghkue8"]
+
+[ext_resource type="Script" uid="uid://bsrg3pp6lgd1h" path="res://objects/items/custom/item_rhett_sound_boost.gd" id="1_0ac8r"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_up1l8"]
+
+[resource]
+script = ExtResource("2_up1l8")
+item_tags = null
+qualitoon = 4
+rarity = 0
+evergreen = false
+realtime = false
+slot = 0
+world_scale = 1.0
+world_y_offset = 0.0
+want_ui_spin = true
+ui_cam_offset = 0.0
+item_name = "Rhett Sound Boost"
+item_description = ""
+big_description = "Unique to Rhett Trap (ignore that its hacked from clara's boost)"
+stats_add = {}
+stats_multiply = {}
+player_values = {}
+arbitrary_data = {}
+item_script = ExtResource("1_0ac8r")
+remember_item = true
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0

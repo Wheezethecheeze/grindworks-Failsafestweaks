@@ -39,6 +39,6 @@ func create_credit(credit : GameCredit) -> Control:
 	return new_credit
 
 func do_fakeout() -> void:
-	AudioManager.play_sound(load("res://audio/sfx/misc/MG_neg_buzzer.ogg"))
+	AudioManager.play_sound(load("res://audio/sfx/battle/gags/toonup/sparkly.ogg"))
 	fakeout.get_node('LabelContainer/GeneralButton').queue_free()
 	fakeout.get_node('LabelContainer/Role').show()

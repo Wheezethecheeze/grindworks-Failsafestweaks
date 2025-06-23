@@ -620,7 +620,7 @@ label_settings = SubResource("LabelSettings_ef8ac")
 [node name="Role" type="Label" parent="FakeoutCredit/LabelContainer" index="2"]
 visible = false
 layout_mode = 2
-text = "No, not you. The guy behind you."
+text = "Yes, really! thank you.. this means a lot to me. "
 label_settings = SubResource("LabelSettings_aj6wg")
 
 [connection signal="button_down" from="Panel/CreditWindow/ScrollContainer/CreditContainer/FakeoutCredit/LabelContainer/GeneralButton" to="Panel/CreditWindow/ScrollContainer/CreditContainer/FakeoutCredit/LabelContainer/GeneralButton" method="on_button_down"]
