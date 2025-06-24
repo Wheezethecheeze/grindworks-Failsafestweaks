@@ -111,6 +111,7 @@ const TOON_UNLOCK_ORDER_PATHS := [
 	'res://objects/player/characters/moe_zart.tres',
 	'res://objects/player/characters/testchar.tres',
 	'res://objects/player/characters/rhett.tres',
+	'res://objects/player/characters/Failsafe.tres',
 ]
 ## Characters unlocked non-sequentially
 var ADDITIONAL_TOON_PATHS := []

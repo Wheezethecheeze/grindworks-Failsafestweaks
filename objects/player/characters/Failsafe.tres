@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=18 format=3 uid="uid://b85c2qaak43mb"]
+
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_aopif"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_3r3e8"]
+[ext_resource type="Texture2D" uid="uid://qqjlo7wfqytb" path="res://models/toon/textures/clothes/shirts/failsafeshorts.png" id="3_aopif"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="4_yyhpy"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="5_l4peu"]
+[ext_resource type="Texture2D" uid="uid://c848jtnbpbmf1" path="res://models/toon/textures/clothes/shirts/failsafeshirt.png" id="6_3r3e8"]
+[ext_resource type="Texture2D" uid="uid://caam1cka7v4kb" path="res://models/toon/textures/clothes/shirts/failsafesleeve.png" id="7_pyyi7"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_67d41"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_onwyj"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_1y80o"]
+[ext_resource type="Resource" uid="uid://kr76u2887otq" path="res://objects/items/resources/passive/Failsafe_setup.tres" id="11_67d41"]
+[ext_resource type="Resource" uid="uid://dhqdupgswh338" path="res://objects/items/resources/accessories/backpacks/failsafe gag pack.tres" id="13_aopif"]
+[ext_resource type="Resource" uid="uid://ca25oh0addxd4" path="res://objects/items/resources/passive/failsafe-eye.tres" id="13_l7iiw"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("1_aopif")
+damage = 9.99
+defense = 9.99
+evasiveness = 9.99
+accuracy = 9.99
+speed = 9.99
+max_turns = 9
+max_hp = 999
+hp = 999
+turns = 9
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("2_3r3e8")
+texture = ExtResource("3_aopif")
+base_color = Color(1, 1, 1, 1)
+color_type = 1
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("5_l4peu")
+shirt_texture = ExtResource("6_3r3e8")
+sleeve_texture = ExtResource("7_pyyi7")
+base_color = Color(1, 1, 1, 1)
+sleeve_color = Color(1, 1, 1, 1)
+color_type = 1
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("4_yyhpy")
+body_type = 1
+species = 2
+head_index = 2
+eyelashes = false
+skirt = false
+head_color = Color(1, 1, 1, 1)
+torso_color = Color(1, 1, 1, 1)
+leg_color = Color(1, 1, 1, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("9_onwyj")
+character_name = "Failsafe"
+character_summary = "- It'ff me."
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("8_67d41")
+starting_laff = 999
+starting_items = Array[ExtResource("10_1y80o")]([ExtResource("11_67d41"), ExtResource("13_l7iiw"), ExtResource("13_aopif")])
+base_stats = SubResource("Resource_jj61k")
+override_index = -1
+achievement_qualities = Dictionary[int, String]({
+26: "Starts with Paint Bucket"
+})
+random_character_stored_name = ""
+achievement_index = 0
