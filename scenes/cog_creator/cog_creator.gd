@@ -1,6 +1,6 @@
 extends Control
 
-const COG_SAVE_PATH := "user://save/custom_cogs/"
+const COG_SAVE_PATH := "user://save/custom_cogs_failsafe/"
 const COG_HEAD_PATH := "res://models/cogs/heads/"
 const TITLE_SCENE := "res://scenes/title_screen/title_screen.tscn"
 

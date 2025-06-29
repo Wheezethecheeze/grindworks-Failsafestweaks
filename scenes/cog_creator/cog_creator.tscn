@@ -1,4 +1,4 @@
-[gd_scene load_steps=233 format=3 uid="uid://b3wmyoqcbv6wd"]
+[gd_scene load_steps=234 format=3 uid="uid://b3wmyoqcbv6wd"]
 
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="1_uqjo6"]
 [ext_resource type="Script" uid="uid://pe4vewmekb22" path="res://scenes/cog_creator/cog_creator.gd" id="1_xx4e4"]
@@ -281,7 +281,8 @@ font_size = 18
 font = ExtResource("9_i3p7p")
 font_size = 48
 
-[sub_resource type="LabelSettings" id="LabelSettings_8bsf2"]
+[sub_resource type="LabelSettings" id="LabelSettings_lrmeb"]
+line_spacing = -10.935
 font = ExtResource("9_i3p7p")
 font_size = 36
 font_color = Color(0, 0, 0, 1)
@@ -290,6 +291,12 @@ outline_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_04ry4"]
 font = ExtResource("9_i3p7p")
 font_size = 24
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8bsf2"]
+font = ExtResource("9_i3p7p")
+font_size = 36
 font_color = Color(0, 0, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
@@ -1041,7 +1048,7 @@ texture_pressed = ExtResource("5_nipba")
 texture_hover = ExtResource("6_34nqq")
 texture_disabled = null
 ignore_texture_size = false
-text = "Help"
+text = "Help!!!"
 
 [node name="ExitButton" parent="Header" instance=ExtResource("3_ca28p")]
 custom_minimum_size = Vector2(0, 90)
@@ -1226,6 +1233,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Welcome" type="Control" parent="HelpMenu/Panel/Pages"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1237,15 +1245,18 @@ grow_vertical = 2
 
 [node name="Title" type="Label" parent="HelpMenu/Panel/Pages/Welcome"]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
+anchors_preset = -1
+anchor_right = 1.063
+offset_left = 30.0
 offset_top = 15.0
-offset_bottom = 46.0
+offset_right = -50.066
+offset_bottom = 133.0
 grow_horizontal = 2
-text = "Welcome to
-The Cog Creator!"
-label_settings = SubResource("LabelSettings_8bsf2")
+text = "Welcome to The 
+Extended Cog Creator!"
+label_settings = SubResource("LabelSettings_lrmeb")
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Summary" type="Label" parent="HelpMenu/Panel/Pages/Welcome"]
 layout_mode = 1
@@ -1254,12 +1265,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -162.5
-offset_top = -116.0
-offset_right = 162.5
+offset_left = -162.0
+offset_top = -145.0
+offset_right = 163.0
+offset_bottom = 22.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "Here you can create unique Cogs that will show up in normal gameplay!"
+text = "Here you can create unique Cogs that will show up in normal gameplay, now with some tweaks too!"
 label_settings = SubResource("LabelSettings_04ry4")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -1282,7 +1294,7 @@ anchor_right = 1.0
 offset_top = 15.0
 offset_bottom = 46.0
 grow_horizontal = 2
-text = "Quick Disclaimer"
+text = "Disclaimer"
 label_settings = SubResource("LabelSettings_8bsf2")
 horizontal_alignment = 1
 
@@ -1294,12 +1306,53 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -162.0
-offset_top = -170.0
+offset_top = -189.0
 offset_right = 163.0
-offset_bottom = 2.0
+offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "There are no guardrails here. I've decided I won't stop you from applying textures to models that absolutely do not fit, for example. "
+text = "This extended version of the cog creator is unsupported by the vanilla game. please don't be surprised if things dont work right."
+label_settings = SubResource("LabelSettings_04ry4")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Disclaimer2" type="Control" parent="HelpMenu/Panel/Pages"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 13.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="HelpMenu/Panel/Pages/Disclaimer2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 15.0
+offset_bottom = 46.0
+grow_horizontal = 2
+text = "Disclaimer"
+label_settings = SubResource("LabelSettings_8bsf2")
+horizontal_alignment = 1
+
+[node name="Summary" type="Label" parent="HelpMenu/Panel/Pages/Disclaimer2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -162.0
+offset_top = -204.0
+offset_right = 163.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "another thing, I'm by no means good with code! expect some instability with this.
+also, no limits are put in place. I should mention that, since that was on the original."
 label_settings = SubResource("LabelSettings_04ry4")
 horizontal_alignment = 1
 autowrap_mode = 2
