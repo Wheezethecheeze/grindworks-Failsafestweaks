@@ -1,4 +1,4 @@
-# Toontown: The Grindworks
+# Grindworks: Failsafe's Tweaks
 
 
 This is a single-player game based on Disney's Toontown Online developed with the Godot Engine.
@@ -19,7 +19,7 @@ This is a single-player game based on Disney's Toontown Online developed with th
 
 Enjoy!
 
-## Credits
+## Grindworks Credits
 - Evan
   - Project Lead, Programmer & Designer
 - Sketched
@@ -74,6 +74,11 @@ Enjoy!
   - Consultant
 - Toontown: Event Horizon
   - Cog Rigs
+## Failsafe's Tweaks credits
+- Toontown: Corporate Clash
+  - Various models and textures
+- Toontown Rewritten
+  - Various models and textures
 ### Special Thanks
 - Erin (Cosmic)
 - Goatcanon
@@ -81,3 +86,4 @@ Enjoy!
 - Niji
 - Princess Sandy
 - You! Yes, really.
+- Everyone interested in my shenanigans
