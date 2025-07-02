@@ -1,4 +1,4 @@
-[gd_scene load_steps=234 format=3 uid="uid://b3wmyoqcbv6wd"]
+[gd_scene load_steps=237 format=3 uid="uid://b3wmyoqcbv6wd"]
 
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="1_uqjo6"]
 [ext_resource type="Script" uid="uid://pe4vewmekb22" path="res://scenes/cog_creator/cog_creator.gd" id="1_xx4e4"]
@@ -222,6 +222,9 @@
 [ext_resource type="Texture2D" uid="uid://bnhiun8ybi5iw" path="res://models/cogs/textures/waiter/waiter_m_sleeve.png" id="191_qr7mi"]
 [ext_resource type="Texture2D" uid="uid://cig3t65qcrbub" path="res://models/cogs/textures/waiter/waiter_m_blazer.png" id="192_mt7e8"]
 [ext_resource type="Texture2D" uid="uid://bqekcqvih7aud" path="res://models/cogs/textures/waiter/waiter_m_leg.png" id="193_11wks"]
+[ext_resource type="Texture2D" uid="uid://vuo107js6tco" path="res://models/cogs/textures/board/sleeve.png" id="202_mlrf3"]
+[ext_resource type="Texture2D" uid="uid://nrygx678t4bv" path="res://models/cogs/textures/board/blazer.png" id="203_5uwqh"]
+[ext_resource type="Texture2D" uid="uid://d3h6vxlfhk50c" path="res://models/cogs/textures/board/leg.png" id="204_th0sh"]
 
 [sub_resource type="Resource" id="Resource_ookrr"]
 script = ExtResource("34_d7aur")
@@ -354,6 +357,10 @@ suits = Array[Dictionary]([{
 "custom_arm_tex": ExtResource("191_qr7mi"),
 "custom_blazer_tex": ExtResource("192_mt7e8"),
 "custom_leg_tex": ExtResource("193_11wks")
+}, {
+"custom_arm_tex": ExtResource("202_mlrf3"),
+"custom_blazer_tex": ExtResource("203_5uwqh"),
+"custom_leg_tex": ExtResource("204_th0sh")
 }])
 
 [node name="World3D" type="Node3D" parent="."]
@@ -415,7 +422,7 @@ default_center_text = "Body"
 
 [node name="DepartmentScroller" parent="Menus/BodySelector/OptionContainer" instance=ExtResource("7_kyrf2")]
 layout_mode = 2
-options = Array[String](["Sellbot", "Cashbot", "Lawbot", "Bossbot"])
+options = Array[String](["Sellbot", "Cashbot", "Lawbot", "Bossbot", "Boardbot"])
 wrap_around = false
 default_center_text = "Department"
 

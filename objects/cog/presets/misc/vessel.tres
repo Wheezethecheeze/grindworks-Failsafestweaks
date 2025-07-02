@@ -22,7 +22,7 @@ one_time_use = false
 
 [resource]
 script = ExtResource("7_7s1xb")
-department = 3
+department = 5
 suit = 0
 custom_blazer_tex = ExtResource("3_smhmb")
 custom_arm_tex = ExtResource("2_v8rfy")

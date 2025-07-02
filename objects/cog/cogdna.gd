@@ -6,6 +6,8 @@ enum CogDept {
 	CASH,
 	LAW,
 	BOSS,
+	BOARD,
+	SLENDER,
 	NULL,
 }
 @export var department := CogDept.SELL

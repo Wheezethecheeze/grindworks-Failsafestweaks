@@ -25,7 +25,7 @@ one_time_use = false
 
 [resource]
 script = ExtResource("1_21e8a")
-department = 3
+department = 5
 suit = 1
 custom_blazer_tex = ExtResource("2_lb7e6")
 custom_arm_tex = ExtResource("1_n1cnc")
