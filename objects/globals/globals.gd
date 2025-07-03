@@ -150,7 +150,7 @@ func remove_proxy(cog_dna : CogDNA) -> void:
 
 ## Custom Cogs
 var ALL_COGS_POOL: CogPool
-const COG_SAVE_PATH := "user://save/custom_cogs/"
+const COG_SAVE_PATH := "user://save/custom_cogs_failsafe/"
 const ACCEPTED_MODELS := ["glb", "gltf"]
 const ACCEPTED_TEXTURES := ["png", "gltf"]
 var loaded_custom_cogs : Dictionary[String, CogDNA] = {}
